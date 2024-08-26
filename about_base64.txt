@@ -1,0 +1,56 @@
+Base64 Encoding:
+
+Base64 encoding takes binary data and converts it into a text format.
+It works by dividing the data into 6-bit segments,
+and each segment is then represented by a single character.
+from a set of 64 possible characters (hence the name "base64").
+
+---------------------------------------------------------------------------------------------------------------------
+
+Example:
+Binary Data: 101101 100110 001100 001100
+Base64 Representation: Each 6-bit group is mapped to a specific character.
+
+Convert Each 6-bit Group to Decimal:
+101101 -> 45
+100110 -> 38
+001100 -> 12
+001100 -> 12
+
+Map Each Decimal Value to a Base64 Character:
+45 -> t
+38 -> m
+12 -> M
+12 -> M
+
+Base64 Output: tmMM
+So, the base64 representation for the binary data 101101 100110 001100 001100 would be tmMM.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Why Base64?
+
+Binary data (like images, executables, or other binary files) 
+often contains bytes that cannot be directly represented as text characters.
+When transmitting binary data over protocols designed for text (such email or HTTP),
+certain byte sequences might be misinterpreted as control characters,
+causing errors or unexpected behavior.
+
+Base64 encodes this binary data into a string of text characters,
+ensuring that it can be safely transmitted over text-based protocols without being misinterpreted.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Usage:
+
+Base64 is often used when you need to send binary data
+(such as images or files) over systems that are designed to handle text.
+
+For example, email protocols are typically text-based and may not handle raw binary data properly.
+By encoding the data in base64, you ensure that it can be transmitted as text without issues.
+
+Similarly, when working with network protocols that require text input,
+base64 encoding can be used to safely transmit binary data.
+
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
