@@ -23,11 +23,11 @@ print(my_text_decode_b64)  # Outputs the decoded byte string (original "Hello wo
 # Step 3: Working with binary data (e.g., an image file)
 
 # Read an image file in binary mode ('rb' mode)
-with open("image_NueralNine.png", "rb") as f:
+with open("image.png", "rb") as f:
     data = f.read()  # Read the image data as bytes
 
 # Create a copy of the image by writing the binary data to a new file
-with open("copyOf_image_NueralNine.png", "wb") as f:
+with open("copyOf_image.png", "wb") as f:
     f.write(data)  # Write the binary data to a new file in 'wb' mode (write binary)
 
 # Optional: You could print the binary data to see what it looks like
