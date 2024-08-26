@@ -1,6 +1,8 @@
 # Base64 Encoding and Decoding in Python
 
-This repository contains a Python script that demonstrates the process of encoding and decoding text and binary data using Base64. Base64 is a common encoding scheme used to convert binary data into an ASCII string format. This is particularly useful when transmitting data over media that are designed to deal with text.
+This repository contains a Python script that demonstrates the process of encoding and decoding text and binary data using Base64.
+ Base64 is a common encoding scheme used to convert binary data into an ASCII string format.
+ This is particularly useful when transmitting data over media that are designed to deal with text.
 
 ## Getting Started
 
@@ -23,12 +25,13 @@ This repository contains a Python script that demonstrates the process of encodi
 
 ### 2. Binary Data Encoding and Decoding
 
-- The script reads an image file (`image_NueralNine.png`) in binary mode.
+- The script reads an image file (`image.png`) in binary mode.
 - It creates an identical copy of the image to demonstrate handling binary data.
 - The binary data is then encoded into a Base64 string, which is safe for text transmission.
 - The script also decodes the Base64 string back to its original binary data, showing that the process is reversible.
 
 ### 3. Use Cases
 
-- **Transmitting Data:** Base64 encoding is commonly used to safely transmit binary data like images, files, and executables over text-based protocols like email, HTTP, and others.
+- **Transmitting Data:** Base64 encoding is commonly used to safely transmit binary data like:
+   images, files, and executables over text-based protocols like email, HTTP, and others.
 - **Storage:** Sometimes, data is stored in Base64 format to ensure compatibility across systems that handle text rather than raw binary.
